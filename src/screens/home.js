@@ -52,7 +52,7 @@ export default function Home() {
                             keyExtractor = {(item)=>(item.key)}
                             data = {todos}
                             renderItem = {({item})=> (
-                            <TodoItem item={item} deleteItem={deleteItem}/>
+                                <TodoItem item={item} deleteItem={deleteItem}/>
                             )}
                         />
                     </View>
@@ -68,10 +68,12 @@ const styles = StyleSheet.create({
       flex: 1
     },
     content:{
-        padding: 9
+        padding: 9,
+        flex:1
     },
     list: {
-      marginTop: 20
+      marginTop: 20,
+      flex:1
     }
     
 });
